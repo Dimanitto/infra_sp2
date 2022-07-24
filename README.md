@@ -42,7 +42,7 @@ YaMDB отправляет письмо с кодом подтверждения
 
 # Установка
 
-Создать файл .env в директории infra_sp2/infra:
+Создать файл .env в директории infra_sp2/infra командой:
 - nano .env
 В котором необходимо создать переменные:
 - DB_NAME
@@ -52,11 +52,11 @@ YaMDB отправляет письмо с кодом подтверждения
 ## Как запустить проект
 - cd infra
 - Собрать и запустить все сервисы командой: docker-compose up -d --build
-##Выполнить команды по очереди.
+## Выполнить команды по очереди.
 - docker-compose exec web python manage.py migrate
 - docker-compose exec web python manage.py createsuperuser
 - docker-compose exec web python manage.py collectstatic --no-input
-##Для остановки контейнера
+## Для остановки контейнера
 - docker-compose stop
 
 # Описание команды для заполнения БД готовой фикстурой:
