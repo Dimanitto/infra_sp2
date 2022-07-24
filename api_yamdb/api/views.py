@@ -11,7 +11,7 @@ from rest_framework.response import Response
 from reviews.models import Title, Category, Genre, Review, User, UserAuth
 from .serializers import (
     TitleSerializer, CategorySerializer,
-    GenreSerializer, CommentSerializer, ReviewSerializer, GetTokenSerializer,
+    GenreSerializer, GetTokenSerializer,
     SignUpSerializer, UserProfileSerializer, UserSerializer,
     CommentSerializer, ReviewSerializer
 )
